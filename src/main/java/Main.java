@@ -4,7 +4,9 @@ import java.util.Calendar;
 import java.util.Scanner;
 
 public class Main {
+    // Prints all attributes of the students table
     static void getAllStudents(){
+        // Please change these fields as necessary!
         String url = "jdbc:postgresql://localhost:5432/A3DB";
         String user = "postgres";
         String password = "poplop123";
@@ -32,7 +34,10 @@ public class Main {
             System.out.println(e);
         }
     }
+
+    // Adds a student with attributes first_name, last_name, email, and date to the database
     static void addStudent(String first_name, String last_name, String email, Date date){
+        // Please change these fields as necessary!
         String url = "jdbc:postgresql://localhost:5432/A3DB";
         String user = "postgres";
         String password = "poplop123";
@@ -56,7 +61,10 @@ public class Main {
             System.out.println(e);
         }
     }
+
+    // Updates the student corresponding to student_id with the email new_email in the database
     static void updateStudentEmail(int student_id, String new_email){
+        // Please change these fields as necessary!
         String url = "jdbc:postgresql://localhost:5432/A3DB";
         String user = "postgres";
         String password = "poplop123";
@@ -74,7 +82,10 @@ public class Main {
             System.out.println(e);
         }
     }
+
+    // Deletes the student corresponding to student_id in the database
     static void deleteStudent(int student_id){
+        // Please change these fields as necessary!
         String url = "jdbc:postgresql://localhost:5432/A3DB";
         String user = "postgres";
         String password = "poplop123";
