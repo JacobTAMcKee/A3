@@ -130,6 +130,7 @@ public class Main {
                 case 3:
                     System.out.println("Input ID Of Student To Update:");
                     int student_id = s.nextInt();
+                    s.nextLine();
                     System.out.println("Input New Email:");
                     String new_email = s.nextLine();
                     updateStudentEmail(student_id, new_email);
